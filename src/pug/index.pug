@@ -11,4 +11,12 @@ html(lang="en")
         include components/mixins
         include components/header
         h1 Hello world
+        ul
+            each element in menu  
+                li 
+                    a(href="#") #{element.toLowerCase()}
+            else 
+                li No 
+                    strong money
+                    |!
         include components/footer
